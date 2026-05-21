@@ -19,7 +19,7 @@ const features = [
 ];
 
 const testimonials = [
-  { id: '1', name: 'Priya Sharma', child: 'Aarav (Nursery)', text: 'Little Stars transformed my shy child into a confident, happy learner. The teachers are incredibly nurturing!', rating: 5, avatar: 'PS' },
+  { id: '1', name: 'Priya Sharma', child: 'Aarav (Nursery)', text: 'New Kids transformed my shy child into a confident, happy learner. The teachers are incredibly nurturing!', rating: 5, avatar: 'PS' },
   { id: '2', name: 'Rajesh Kumar', child: 'Ananya (LKG)', text: 'The curriculum is outstanding. My daughter loves going to school every day and has made amazing progress.', rating: 5, avatar: 'RK' },
   { id: '3', name: 'Meena Patel', child: 'Rohan (Playgroup)', text: "We felt so welcome from day one. The staff truly cares about every child's wellbeing and development.", rating: 5, avatar: 'MP' },
   { id: '4', name: 'Sunita Reddy', child: 'Priya (UKG)', text: 'The best investment we made for our child. Priya is now reading full sentences and loves mathematics!', rating: 5, avatar: 'SR' },
@@ -68,7 +68,7 @@ export default function Home() {
               </motion.h1>
 
               <motion.p variants={fadeUp} className="text-xl text-gray-600 leading-relaxed mb-10 max-w-lg">
-                Nurturing curious minds through play, creativity, and love. Join 500+ happy families who trust Little Stars Preschool for their child's bright future.
+                Nurturing curious minds through play, creativity, and love. Join 500+ happy families who trust New Kids Preschool for their child's bright future.
               </motion.p>
 
               <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
@@ -234,7 +234,7 @@ export default function Home() {
             Give Your Child the Best Start in Life
           </h2>
           <p className="text-white/90 text-lg mb-10">
-            Seats are limited! Secure your child's spot at Little Stars Preschool for 2025–26.
+            Seats are limited! Secure your child's spot at New Kids Preschool for 2025–26.
           </p>
           <Link to="/admissions" className="inline-flex items-center gap-2 bg-white text-primary-600 font-bold py-4 px-10 rounded-full shadow-2xl hover:shadow-primary-300/50 hover:-translate-y-1 transition-all duration-300 text-lg">
             Apply for Admission <ArrowRight className="w-5 h-5" />

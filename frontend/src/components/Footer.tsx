@@ -13,7 +13,7 @@ export default function Footer() {
                 <Star className="w-5 h-5 text-white fill-white" />
               </div>
               <div>
-                <div className="font-display font-bold text-lg text-white leading-tight">Little Stars</div>
+                <div className="font-display font-bold text-lg text-white leading-tight">New Kids</div>
                 <div className="text-xs text-gray-400 font-fun">Preschool</div>
               </div>
             </Link>
@@ -95,7 +95,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-gray-500">© {new Date().getFullYear()} Little Stars Preschool. All rights reserved.</p>
+          <p className="text-xs text-gray-500">© {new Date().getFullYear()} New Kids Preschool. All rights reserved.</p>
           <p className="text-xs text-gray-500">Made with ❤️ for little learners</p>
         </div>
       </div>

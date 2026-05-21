@@ -49,7 +49,7 @@ function buildHtmlEmail(data: EnquiryData): string {
   <div class="container">
     <div class="header">
       <h1>⭐ New Admission Enquiry</h1>
-      <p>Little Stars Preschool – Admissions 2025–26</p>
+      <p>New Kids Preschool – Admissions 2025–26</p>
     </div>
     <div class="body">
       <p style="color:#475569;font-size:14px;margin-top:0;">A new enquiry has been submitted via the website. Please follow up within 24 hours.</p>
@@ -106,7 +106,7 @@ export async function sendEnquiryEmail(data: EnquiryData): Promise<void> {
   const adminEmail = process.env.ADMIN_EMAIL || 'newkidspre@gmail.com';
 
   const info = await transporter.sendMail({
-    from: `"Little Stars Website" <${process.env.SMTP_USER}>`,
+    from: `"New Kids Website" <${process.env.SMTP_USER}>`,
     to: adminEmail,
     replyTo: data.email,
     subject: `New Admission Enquiry: ${data.childName} (${data.program})`,

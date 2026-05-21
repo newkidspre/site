@@ -33,7 +33,7 @@ export default function About() {
         <div className="absolute top-10 right-10 w-64 h-64 bg-primary-200 rounded-full blur-3xl opacity-30" />
         <div className="max-w-7xl mx-auto px-4 md:px-8 text-center relative">
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-primary-500 font-fun font-bold uppercase tracking-wider mb-3">Our Story</motion.p>
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="section-title mb-6">About <span className="gradient-text">Little Stars</span></motion.h1>
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="section-title mb-6">About <span className="gradient-text">New Kids</span></motion.h1>
           <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} className="section-subtitle mx-auto">Founded in 2010 with a single classroom and a big dream — to give every child the best start possible.</motion.p>
         </div>
       </section>
