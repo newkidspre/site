@@ -1,0 +1,16 @@
+# Preschool Website Tour Checklist
+
+- [x] Navigate to Homepage (http://localhost:5173/) and scroll through the page
+- [x] Navigate to "About Us" and inspect content
+- [x] Navigate to "Programs" and inspect content
+- [x] Navigate to "Admissions" and inspect the form
+- [x] Navigate to "Contact" and inspect content
+- [x] Go back to "Admissions", test form validation (submit empty/invalid data)
+- [x] Check browser console logs for any errors
+- [ ] Document visual design, layout, colors, animations, and responsiveness
+- [ ] Report findings to the main agent
+
+
+
+
+

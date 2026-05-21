@@ -1,0 +1,49 @@
+service: little-stars-preschool-api
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ap-south-1
+  stage: ${opt:stage, 'prod'}
+  memorySize: 256
+  timeout: 15
+  environment:
+    ADMIN_EMAIL: ${env:ADMIN_EMAIL, 'admin@littlestars.in'}
+    SMTP_HOST:   ${env:SMTP_HOST,   'email-smtp.ap-south-1.amazonaws.com'}
+    SMTP_PORT:   ${env:SMTP_PORT,   '587'}
+    SMTP_USER:   ${env:SMTP_USER}
+    SMTP_PASS:   ${env:SMTP_PASS}
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - ses:SendEmail
+            - ses:SendRawEmail
+          Resource: '*'
+
+functions:
+  enquiry:
+    handler: handler.handler
+    events:
+      - http:
+          path: /enquiry
+          method: POST
+          cors:
+            origin: '*'
+            headers:
+              - Content-Type
+            allowCredentials: false
+      - http:
+          path: /enquiry
+          method: OPTIONS
+          cors: true
+    description: 'Handle preschool admission enquiry form submissions'
+
+plugins:
+  - serverless-offline
+
+custom:
+  serverless-offline:
+    httpPort: 4000
