@@ -7,8 +7,8 @@
 - [x] Navigate to "Contact" and inspect content
 - [x] Go back to "Admissions", test form validation (submit empty/invalid data)
 - [x] Check browser console logs for any errors
-- [ ] Document visual design, layout, colors, animations, and responsiveness
-- [ ] Report findings to the main agent
+- [x] Document visual design, layout, colors, animations, and responsiveness
+- [x] Report findings to the main agent (see walkthrough.md)
 
 
 

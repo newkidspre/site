@@ -95,7 +95,7 @@ function buildHtmlEmail(data: EnquiryData): string {
       <div class="divider"></div>
       <p style="font-size:12px;color:#94a3b8;margin:0;">Submitted on: ${new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' })} IST</p>
     </div>
-    <div class="footer">© ${new Date().getFullYear()} Little Stars Preschool · hello@littlestars.in · +91 98765 43210</div>
+    <div class="footer">© ${new Date().getFullYear()} Little Stars Preschool · newkidspre@gmail.com</div>
   </div>
 </body>
 </html>`;
@@ -103,7 +103,7 @@ function buildHtmlEmail(data: EnquiryData): string {
 
 export async function sendEnquiryEmail(data: EnquiryData): Promise<void> {
   const transporter = createTransporter();
-  const adminEmail = process.env.ADMIN_EMAIL || 'admin@littlestars.in';
+  const adminEmail = process.env.ADMIN_EMAIL || 'newkidspre@gmail.com';
 
   const info = await transporter.sendMail({
     from: `"Little Stars Website" <${process.env.SMTP_USER}>`,
